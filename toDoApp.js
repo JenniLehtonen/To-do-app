@@ -1,4 +1,4 @@
-var input = document.getElementById("newListItem");
+var input = document.getElementById("newListItem");  //User can just click enter after writing the task into input field, no need to click the actual button
 input.addEventListener("keyup", function(event) {
   if (event.keyCode === 13) {
    event.preventDefault();
@@ -9,25 +9,18 @@ input.addEventListener("keyup", function(event) {
 $(document).ready(function(){
     let newListItem = $("#newListItem");
     
-    
-    for (i = 0; i < localStorage.length; i++) {
+    for (i = 0; i < localStorage.length; i++) {  //Take unfinished list items from the local storage and show them in to do list
         x = localStorage.key(i);
         let newLi1 = $("<li></li>");
         let deleteButton1 = $("<button class='delete'>x</button>");
-        //$("#list").append("<li></li>"+localStorage.getItem(x)).append("<button class='delete'>x</button>");
-       //$("#list").append("<li></li>").append(localStorage.getItem(x)).append("<button class='delete'>x</button>");
-        newLi1.append(localStorage.getItem(x)).append(deleteButton1).append("<br>");
+        newLi1.append(localStorage.getItem(x)).append(deleteButton1);
         $("#list").append(newLi1);
-        
-    
-        console.log(newLi1);
       }
       
-
   $("#add").on( "click", function(){
-    let valueToBeAdded = createNewLi(newListItem.val());
+    let valueToBeAdded = createNewLi(newListItem.val());  //Send the value to createNewLi function
     
-    $("#list").append(valueToBeAdded);
+    $("#list").append(valueToBeAdded);  //Add the created li element to to do list
     
     $("#newListItem").val("");
     $("input").focus();
@@ -38,15 +31,15 @@ $(document).ready(function(){
     let newLi = $("<li></li>");
     let deleteButton = $("<button class='delete'>x</button>");
 
-    newLi.append(newListItem).append(deleteButton);
+    newLi.append(newListItem).append(deleteButton); //Create new li element
     randomId= "toDO" + Math.floor(Math.random() * 100) + 1;
-    localStorage.setItem(randomId, newListItem);
+    localStorage.setItem(randomId, newListItem);  //Add the new item to the local storage
     return newLi;
   }
   
   $("#list").on("click", ".delete", function(){
     $(this).parent().remove();
-    var testi=localStorage.key(this);
-    localStorage.removeItem(testi);  
+    let localStorageKey=localStorage.key(this); //Get the local storage key of the clicked item
+    localStorage.removeItem(localStorageKey);  //Remove the clicked item from the local storage
   })
   });
