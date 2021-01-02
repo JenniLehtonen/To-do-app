@@ -1,26 +1,26 @@
 $(document).ready(function(){
-    let uusiTehtava = $("#uusiTehtava");
+    let newListItem = $("#newListItem");
   
-  $("#lisaa").on( "click", function(){
-    let lisattavaArvo = luoUusiLi(uusiTehtava.val());
+  $("#add").on( "click", function(){
+    let valueToBeAdded = createNewLi(newListItem.val());
     
-    $("#lista").append(lisattavaArvo);
+    $("#list").append(valueToBeAdded);
     
-    $("#uusiTehtava").val("");
+    $("#newListItem").val("");
     $("input").focus();
   })
   
-  let luoUusiLi = function(uusiTehtava) {
+  let createNewLi = function(newListItem) {
   
-    let uusiLi = $("<li></li>");
-    let poistaPainike = $("<button class='poista'>x</button>");
+    let newLi = $("<li></li>");
+    let deleteButton = $("<button class='delete'>x</button>");
   
-    uusiLi.append(uusiTehtava).append(poistaPainike);
+    newLi.append(newListItem).append(deleteButton);
   
-    return uusiLi;
+    return newLi;
   }
   
-  $("#lista").on("click", ".poista", function(){
+  $("#list").on("click", ".delete", function(){
     $(this).parent().remove();  
   })
   });

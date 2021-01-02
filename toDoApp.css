@@ -41,13 +41,13 @@ button{
     font-size: 15px;
 }
 
-.poista{
+.delete{
     background-color:transparent;
     color:red;
     border: none;
     padding: 2px;
 }
 
-.poista:focus{
+.delete:focus{
     outline: none;
 }
