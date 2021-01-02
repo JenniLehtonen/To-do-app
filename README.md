@@ -3,5 +3,9 @@ This is a school assignment that I did in the summer of 2020. In to do app user 
 
 Used technologies: **HTML, CSS, JavaScript and jQuery.**
 
+Here you can see pictures of the user interface:
+Here is the application before the user has added any tasks to it.
+![todo1](todo1.JPG "The application without tasks")
 
-
+Here is the application to which the user has added some tasks.
+![todo2](todo2.JPG "The application with tasks")
