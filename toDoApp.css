@@ -71,6 +71,7 @@ button{
 @media screen and (max-width: 992px) {
     #container{
         width: 100%;
+        height: 100%;
         position: absolute;
         top: 0;
         left: 0;
@@ -81,10 +82,11 @@ button{
         box-shadow:inset 0 0 0 1px #ddd;
     }
     h1 {
-        width: 15rem;
+        width: 18rem;
         display: block;
         margin-left: auto;
         margin-right: auto;
+        font-size: 2.5rem;
     }
     input[type=text] {
         padding: 5px;
@@ -93,7 +95,6 @@ button{
     }
     #add{
         padding: 5px 15px;
-        font-size: 15px;
     }
     ul {
         margin: 0;
