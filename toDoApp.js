@@ -1,3 +1,11 @@
+var input = document.getElementById("newListItem");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("add").click();
+  }
+});
+
 $(document).ready(function(){
     let newListItem = $("#newListItem");
   
