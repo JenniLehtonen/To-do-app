@@ -11,7 +11,7 @@ You can visit the application [here](https://jennilehtonen.github.io/toDoApp/).
 ## Technical solutions of the application
 Used technologies: **HTML, CSS, JavaScript and jQuery.**
 
-I have developed this application a bit more after the summer: I have added a feature that saves the tasks to user's **local storage** so the tasks will stay in the application even though the user closes the browser. I have also changed CSS stylings a bit and translated app into English.
+I have developed this application a bit more after the summer: I have added a feature that saves the tasks to user's **local storage** so the tasks will stay in the application even though the user closes the browser. I have also added a feature that enables the user to just press "enter" after writing the task into the input field so it is not necessary to use mouse and click the "Add" button. In addition to these I have changed CSS stylings a bit and translated app into English. I have mainly used jQuery in the codes because it was the purpose in my school assignment.
 
 ## Pictures of the user interface
 
