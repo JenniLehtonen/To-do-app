@@ -1,6 +1,8 @@
 # toDoApp
 This is a school assignment that I did in the summer of 2020. In to do app user can add tasks and delete them when they are done.
 
+You can visit the application [here](https://jennilehtonen.github.io/toDoApp/).
+
 |Table of contents|
 |:------------- |
 |1. [Technical solutions of the application](#Technical-solutions-of-the-application)|
