@@ -15,8 +15,6 @@ I have developed this application a bit more after the summer: I have added a fe
 
 ## Pictures of the user interface
 
-Here you can see pictures of the user interface:
-
 Here is the application before the user has added any tasks to it.
 ![todo1](todo1.JPG "The application without tasks")
 
